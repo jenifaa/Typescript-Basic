@@ -16,6 +16,9 @@ type is a type alias that can store a data type with a named variable
 |  Function Types   | Less commonly used for function types             | Declaring function types is easier and more popular       |
 ```
 
+
+
+
 ## 2. Provide an example of using union and intersection types in TypeScript.
 
 ### Union type:
