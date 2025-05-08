@@ -2,18 +2,17 @@
 
 In TypeScript, an interface is a structure that can only be used for objects. It defines which properties should be present in the object and what the types of those properties should be.
 
-type is a type alias that can store a data type with a named variable
+type is a type alias that can store a data type with a named variable.
 
 ```
-| Feature           | `interface`                                       | `type`                                                    |
-| ----------------- | ------------------------------------------------- |---------------------------------------------------------  |
-|  Usage            | Used only for defining the structure of an object | Can define everything |
-|                   |                                                   |                                                           |
-|  Extension        | Easily extended using extends                     | Combined using & (intersection)                         |
-|                   |                                                   |                                                           |
-|  Merging          | Multiple interfaces with the same name get merged | Cannot declare the same type alias name more than once    |
-|                   |                                                   |                                                           |
-|  Function Types   | Less commonly used for function types             | Declaring function types is easier and more popular       |
+1. Interfaces are only used for objects, while types can define everything.
+
+2. A type can extend using | (union) and & (intersection), whereas an interface can easily extend using the extends keyword.
+
+3. A type cannot be declared more than once, but an interface can be declared multiple times, and it will merge automatically.
+
+4. Types can be used in complex functions, whereas interfaces are typically used for simple object shapes and do not support complex types.
+
 ```
 
 
